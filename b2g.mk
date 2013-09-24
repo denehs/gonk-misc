@@ -37,3 +37,6 @@ ifneq ($(DISABLE_SOURCES_XML),true)
 PRODUCT_PACKAGES += \
 	sources.xml
 endif
+
+PRODUCT_COPY_FILES += \
+	external/pcsc/ifdhandler/smartcardapi/reader.conf:system/etc/reader.conf
